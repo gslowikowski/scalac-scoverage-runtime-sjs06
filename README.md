@@ -1,0 +1,1 @@
+# scalac-scoverage-runtime-sjs06
