@@ -59,8 +59,6 @@ lazy val root = Project("scalac-scoverage-runtime-sjs06", file("."))
     .settings(name := "scalac-scoverage-runtime")
     .settings(appSettings: _*)
     .settings(
-        libraryDependencies ++= Seq(
-            "org.scala-js" %% "scalajs-library" % "0.6.12"/* GS - remove this (rewrite tests for JUnit),
-            "org.scalatest" %% "scalatest_sjs0.6" % ScalatestVersion % "test"*/
-        )
+      scalaJSStage := FastOptStage/*, GS - remove this (rewrite tests for JUnit)
+      libraryDependencies += "org.scalatest" %% "scalatest_sjs0.6" % ScalatestVersion % "test"*/
     )
